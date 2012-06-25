@@ -62,7 +62,8 @@ code { font:normal 12px/20px monospace; }
 h1, h2, h3, h4, h5, h6 {
   font-weight:700;
   margin:1em 0;
-  color:rgba(255,255,255,0.9);
+  /*color:rgba(255,255,255,0.9);*/
+  color:rgba(0,0,0,0.9);
 }
 
 h1 {
@@ -95,34 +96,64 @@ body > div {
   z-index:0;
 }
 
+.section-sep{
+	border-bottom:1px solid  #AAA;
+}
+
+/*DL, DT, DD TAGS LIST DATA*/
+.legend-unhcr dl{
+	margin-bottom:10px;
+}
+.legend-unhcr dl dt{
+	float:left; 
+        margin-right:10px; 
+    	padding:5px;  
+        width:30px; 
+	}
+.legend-unhcr dl dd {
+	margin:2px 0;
+	padding:5px 0;}
+
 .img_legend{
-  padding: 0px 10px 0px 0px;
+  padding: 0px 0px 0px 0px;
   vertical-align:top;}
 
-.legend-map ul {
-    margin: 0;
-    margin-bottom: 5px;
-    padding: 0;
-    /*float: left;*/
-    list-style: none;
-    }
-.legend-map ul li {
-    list-style: none;
-    margin-left: 0;
-    line-height: 15px;
-    margin-bottom: 15px;
-    }
+.legend-title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 100%;
+}
+.legend-scale ul {
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+	float: left;
+	list-style: none;
+}
+.legend-scale ul li {
+	font-size: 80%;
+	list-style: none;
+	margin-left: 0;
+	line-height: 18px;
+	margin-bottom: 2px;
+}
+
+.bottom-legend{
+	clear:both;
+}
 
 ul.legend-labels li span {
-    display: block;
-    float: left;
-    height: 16px;
-    width: 30px;
-    margin-right: 5px;
-    margin-left: 0;
-    border: 1px solid #999;
-    }  
-  
+	display: block;
+	float: left;
+	height: 16px;
+	width: 30px;
+	margin-right: 5px;
+	margin-left: 0;
+	border: 1px solid #999;
+}    
+
+
 #header {
   position:absolute;
   top:0;
@@ -131,8 +162,8 @@ ul.legend-labels li span {
   height:29px;
   background:rgb(255,255,255);
   background:rgba(255,255,255, 0.9);
-  background:rgba(33,33,33, 0.9);
-  border-bottom:1px solid #333;
+  /*background:rgba(33,33,33, 0.9);*/
+  border-bottom:1px solid #AAA;
   overflow:hidden;
   padding:10px 0;
   z-index:2;
@@ -165,17 +196,17 @@ ul.legend-labels li span {
   width:250px;
   background:rgb(255,255,255);
   background:rgba(255,255,255, 0.9);
-  background:rgba(33,33,33, 0.9);
-  border-left:1px solid #333;
+  /*background:rgba(33,33,33, 0.9);*/
+  border-left:1px solid #AAA;
   overflow-x:hidden;
   overflow-y:auto;
   padding:20px;
-  color:rgba(255,255,255,0.9);
+  color:rgba(0,0,0,0.9);
 }
 .layers a {
   display:inline;
   padding:5px;
-  margin:5px 0;
+  margin:5px 0px;
   /*background:#eee;*/
   background:#eee;
   max-width:60px;

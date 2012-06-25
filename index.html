@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>UNHCR 2010 - 2012</title>
+    <title>UNHCR expenses 2010-2011</title>
     <link rel="stylesheet" href="map.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -10,7 +10,7 @@
 <body class="right">
     <div id="header"><div class="limiter">
         <img src="img/unhcr_logo.png">
-	<h1>Visualization of Growing Financial & Human Resources Commitment to Emergencies, 2010-2012</h1> 
+	<h1>Visualization of Growing Financial & Human Resources Commitment to Emergencies, 2010-2011</h1> 
     </div></div>
     <div id="content"><div class="limiter">
         <p>Since 2010 UNHCR have had to face a conjunction of severe humanitarian emergencies.
@@ -20,21 +20,32 @@
         <div id="nav" class="layers">
           <a data-control="layer" href="#y2010">2010</a>
           <a data-control="layer" href="#y2011">2011</a>
-          <a data-control="layer" href="#y2012">2012 (Q1)</a>
         </div>
 	<br/>
-	<hr/>
+	<div class="section-sep"></div>
 	<h3>Legend:</h3>
-	<div class='legend-map'>
-		<ul class='legend-labels'>
-			<li><img class="img_legend" src="img/staff.png"></span>Number of Emergency Response Team staffs deployment.</li>
-			<li>  </li>
-			<li><img class="img_legend" src="img/flows.png">Number of *prima facie asylum seekers (major inflows only).</li>
-			<li><img class="img_legend" src="img/office.png">UNHCR offices (sub-office, branch office, field office, ...).</li>
-			<li><img class="img_legend" src="img/expens.png">Budget expenditures increase or decrease rate between 2010 and 2011 (No data for 2012).</li>
+	<div class="legend-unhcr">
+		<dl>
+		<dt><img class="img_legend" src="img/staff.png"></dt>
+		<dd>Number of Emergency Response Team staffs deployed.</dd>
+		<dt><img class="img_legend" src="img/flows.png"></dt>
+		<dd>Number of prima facie asylum seekers (major inflows only).</dd>
+		</dl>
+	</div>
+	<div class='legend-title'>Budget expenditures increase rate between 2010 and 2011 (%).</div>
+	<div class='legend-scale'>
+		  <ul class='legend-labels'>
+			<li><span style='background:#664830;'></span>[111 ; 247]</li>
+			<li><span style='background:#a69165;'></span>[22 ; 111[</li>
+			<li><span style='background:#f0ecaa;'></span>[5 ; 22[</li>
+			<li><span style='background:#ffffff;'></span>[-7 ; 5[</li>
+			<li><span style='background:#c7e7eb;'></span>[-25 ; -7[</li>
+			<li><span style='background:#69a9c8;'></span>[-52 ; -25[</li>
+			<li><span style='background:#2063a5;'></span>-52</li>
 		</ul>
 	</div>
-	<hr/>
+	<div class='bottom-legend'></div>
+	<div class="section-sep"></div>
 	<h3>Disclaimer:</h3> The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.
     </div></div>
     <div id="map" class="map"></div>
@@ -53,7 +64,7 @@
 
         // Make a new map in #map
     var main = Map('map',{
-            api:'http://a.tiles.mapbox.com/v3/unhcr.map-9wqj9j18.jsonp',
+            api:'http://a.tiles.mapbox.com/v3/unhcr.unhcr_2010_2011_background.jsonp',
             center: {
                 lat: 23,
                 lon: 45,
@@ -72,7 +83,7 @@
 
         main.layers({
             y2010: {
-            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-v2bsd7hn.jsonp',
+            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-n3p6qfl9.jsonp',
                 center: {
 		 lat: 0,
                  lon: 0,
@@ -83,7 +94,7 @@
                 initial: true
             },
             y2011: {
-            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-c3ah54co.jsonp',
+            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-ipfi3g6u.jsonp',
                 center: {
 		 lat: 0,
                  lon: 0,
@@ -91,16 +102,6 @@
                  ease: 1000
                 },
                 group: 0
-	    },
-            y2012: {
-            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-dekq34y0.jsonp',
-                center: {
-		 lat: 0,
-                 lon: 0,
-                 zoom: 3,
-                 ease: 1000
-		},
-		group: 0
 	    }
         });
     </script>
