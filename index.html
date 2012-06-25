@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>UNHCR 2010 - 2012</title>
+    <link rel="stylesheet" href="map.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+</head>
+<body class="right">
+    <div id="header"><div class="limiter">
+        <img src="img/unhcr_logo.png">
+	<h1>Visualization of Growing Financial & Human Resources Commitment to Emergencies, 2010-2012</h1> 
+    </div></div>
+    <div id="content"><div class="limiter">
+        <p>Since 2010 UNHCR have had to face a conjunction of severe humanitarian emergencies.
+	</p>
+	<p>This map shows how financial resources, field offices number, emergency response teams deployment and asylum seekers outflows evolved over this period of time.</p>
+	<!--<h2>Years:</h2>-->
+        <div id="nav" class="layers">
+          <a data-control="layer" href="#y2010">2010</a>
+          <a data-control="layer" href="#y2011">2011</a>
+          <a data-control="layer" href="#y2012">2012 (Q1)</a>
+        </div>
+	<br/>
+	<hr/>
+	<h3>Legend:</h3>
+	<div class='legend-map'>
+		<ul class='legend-labels'>
+			<li><img class="img_legend" src="img/staff.png"></span>Number of Emergency Response Team staffs deployment.</li>
+			<li>  </li>
+			<li><img class="img_legend" src="img/flows.png">Number of *prima facie asylum seekers (major inflows only).</li>
+			<li><img class="img_legend" src="img/office.png">UNHCR offices (sub-office, branch office, field office, ...).</li>
+			<li><img class="img_legend" src="img/expens.png">Budget expenditures increase or decrease rate between 2010 and 2011 (No data for 2012).</li>
+		</ul>
+	</div>
+	<hr/>
+	<h3>Disclaimer:</h3> The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.
+    </div></div>
+    <div id="map" class="map"></div>
+
+    <!-- External libraries and site script -->
+    <script src="ext/jquery.min.js"></script>
+    <script src="ext/modestmaps.min.js"></script>
+    <script src="ext/wax/wax.mm.js"></script>
+    <script src="ext/wax/wax.ext.js"></script>
+    <script src="ext/easey.js"></script>
+    <script src="ext/mmg.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Site configuration -->
+    <script type="text/javascript">
+
+        // Make a new map in #map
+    var main = Map('map',{
+            api:'http://a.tiles.mapbox.com/v3/unhcr.map-9wqj9j18.jsonp',
+            center: {
+                lat: 23,
+                lon: 45,
+                zoom: 3
+            },
+            zoomRange: [3, 4],
+            features: [
+                'zoomwheel',
+                'tooltips',
+                'zoombox',
+                'zoompan',
+                'legend',
+                'share'
+            ]
+        });
+
+        main.layers({
+            y2010: {
+            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-v2bsd7hn.jsonp',
+                center: {
+		 lat: 0,
+                 lon: 0,
+                 zoom: 3,
+                 ease: 1000
+                },
+                group: 0,
+                initial: true
+            },
+            y2011: {
+            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-c3ah54co.jsonp',
+                center: {
+		 lat: 0,
+                 lon: 0,
+                 zoom: 3,
+                 ease: 1000
+                },
+                group: 0
+	    },
+            y2012: {
+            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-dekq34y0.jsonp',
+                center: {
+		 lat: 0,
+                 lon: 0,
+                 zoom: 3,
+                 ease: 1000
+		},
+		group: 0
+	    }
+        });
+    </script>
+</body>
+</html>
