@@ -5,42 +5,48 @@
     <title>UNHCR expenses 2010-2011</title>
     <link rel="stylesheet" href="map.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /> 
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" /> 
 </head>
 <body class="right">
     <div id="header"><div class="limiter">
-        <img src="img/unhcr_logo_high_quality_res.png">
-	<h1>Visualization of Growing Financial & Human Resources Commitment to Emergencies between 2010 and 2011</h1> 
+		    <!--<h1>UNHCR Commitment to Population Displacement Emergencies</h1>-->
+		    <h1>UNHCR COMMITMENT TO POPULATION DISPLACEMENT EMERGENCIES
+		    </h1>
     </div></div>
     <div id="content"><div class="limiter">
         <p class="rationale">Since 2010 UNHCR have had to face a conjunction of severe humanitarian emergencies.
 	</p>
-	<p class="rationale">This map shows how financial resources, field offices number, emergency response teams deployment and asylum seekers outflows evolved between
-	<span id="nav" class="layers">
-		<a data-control="layer" href="#y2010">2010</a> and
-		<a data-control="layer" href="#y2011">2011</a>.
-	</span>
+	<p class="rationale">This map shows how financial resources, field offices number, emergency response teams deployment and asylum seekers outflows evolved between 2010 and 2011.
 	<br/>
+	<h3>Asylum seekers:</h3>
 	<div class="section-sep"></div>
-	<h3>Legend:</h3>
 	<div class="legend-unhcr">
 		<dl>
-		<dt><img class="img_legend" src="img/staff.png"></dt>
-		<dd>Number of Emergency Response Team staffs deployed by country.</dd>
 		<dt><img class="img_legend" src="img/flows.png"></dt>
 		<dd>Number of prima facie asylum seekers (major inflows only) by country.</dd>
 		</dl>
 	</div>
-	<div class='legend-title'>Budget expenditures increase rate between 2010 and 2011 by UNHCR's operational region:</div>
+	<h3>Emergency response team:</h3>
+	<div class="section-sep"></div>
+	<div class="legend-unhcr">
+		<dl>
+		<dt><img class="img_legend" src="img/staff.png"></dt>
+		<dd>Number of Emergency Response Team staffs deployed by country.</dd>
+		</dl>
+	</div>
+	<h3>Budget expenditures increase rate by UNHCR's operational region:</h3>
+	<div class="section-sep"></div>
+	</br>
 	<div class='legend-scale'>
 		  <ul class='legend-labels'>
-			<li><span style='background:#664830;'></span>+111% to +247%</li>
-			<li><span style='background:#a69165;'></span>+22% to 111%</li>
-			<li><span style='background:#f0ecaa;'></span>+5% to +22%</li>
-			<li><span style='background:#ffffff;'></span>-7% to +5%</li>
-			<li><span style='background:#c7e7eb;'></span>-25 to -7%</li>
-			<li><span style='background:#69a9c8;'></span>-52% to -25%</li>
-			<li><span style='background:#2063a5;'></span>-52</li>
+			<li><span style='background:#664830;'></span>Higher than +150%</li>
+			<li><span style='background:#a69165;'></span>+100% to 150%</li>
+			<li><span style='background:#c9bc87;'></span>+50% to +100%</li>
+			<li><span style='background:#eceac6;'></span>0% to 50%</li>
+			<li><span style='background:#c7e7eb;'></span>0% to -10%</li>
+			<li><span style='background:#69a9c8;'></span>-10% to -50%</li>
+			<li><span style='background:#2063a5;'></span>Lower than -50%</li>
 		</ul>
 	</div>
 	<div class='bottom-legend'></div>
@@ -49,7 +55,18 @@
 	</br>
 	<span class="title-sources">Sources: </span><span class="sources">UNHCR.</span>
     </div></div>
-    <div id="map" class="map"></div>
+    <div id="map" class="map">
+	<div class="switch-overlay">
+		<div id="nav" class="layers">
+			<a data-control="layer" href="#y2010">2010</a>
+			<a data-control="layer" href="#y2011">2011</a>
+		</div>
+	</div>
+	<div class="subtitle-overlay">
+		Switch between 2010 and 2011 to see the differences
+	</div>
+        <img class="logo-unhcr" src="img/unhcr_logo_high_quality_res.png">
+    </div>
 
     <!-- External libraries and site script -->
     <script src="ext/jquery.min.js"></script>
