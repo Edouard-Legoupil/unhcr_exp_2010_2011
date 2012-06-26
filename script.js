@@ -327,6 +327,23 @@ $(function() {
         }
         Map.setHash();
     });
+   /* 
+    //Modal Popup box for data
+    $('#data-background a.notes').bind('click', openModal);
+    function openModal() {
+	    $('#overlay, #modal').fadeIn('fast');
+	    return false;
+    }
+    if (location.hash === '#notes') {
+	openModal();
+    }
+    $('#modal a[href$=#close]').click(function (e){
+	    e.preventDefault();
+	    $('#overlay, #modal').fadeOut(1);
+    });*/
+
+
 
     bindGeocoder();
 });
+

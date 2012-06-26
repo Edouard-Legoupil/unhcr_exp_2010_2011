@@ -19,7 +19,11 @@
 	</p>
 	<p class="rationale">This map shows how financial resources, field offices number, emergency response teams deployment and asylum seekers outflows evolved between 2010 and 2011.
 	<br/>
-	<h3>Asylum seekers:</h3>
+	<!--
+	<div id="data-background">
+	<a href='#notes' class='notes' title='Download open data'>Notes on our data</a>
+</div>-->
+	<h3>Asylum seekers</h3>
 	<div class="section-sep"></div>
 	<div class="legend-unhcr">
 		<dl>
@@ -27,7 +31,7 @@
 		<dd>Number of prima facie asylum seekers (major inflows only) by country.</dd>
 		</dl>
 	</div>
-	<h3>Emergency response team:</h3>
+	<h3>Emergency response team</h3>
 	<div class="section-sep"></div>
 	<div class="legend-unhcr">
 		<dl>
@@ -35,7 +39,7 @@
 		<dd>Number of Emergency Response Team staffs deployed by country.</dd>
 		</dl>
 	</div>
-	<h3>Budget expenditures increase rate by UNHCR's operational region:</h3>
+	<h3>Budget expenditures increase rate by UNHCR's operational region</h3>
 	<div class="section-sep"></div>
 	</br>
 	<div class='legend-scale'>
@@ -65,9 +69,21 @@
 	<div class="subtitle-overlay">
 		Switch between 2010 and 2011 to see the differences
 	</div>
-        <img class="logo-unhcr" src="img/unhcr_logo_high_quality_res.png">
+        <img class="logo-unhcr" src="img/unhcr_logo_high_quality_res_bw.png">
+</div>
+    <!--modal--> 
+    <div id="overlay"></div>
+    <div id="modal">
+	    <div class="popup">
+		    <div class="header clearfix">
+			    <h2>Notes on our Data</h2>
+			    <a href="#close" class="icon close">Close</a>
+		    </div>
+		    <div class="content">
+			    <p>This is an overlay</p>
+		    </div>
+	    </div>
     </div>
-
     <!-- External libraries and site script -->
     <script src="ext/jquery.min.js"></script>
     <script src="ext/modestmaps.min.js"></script>
