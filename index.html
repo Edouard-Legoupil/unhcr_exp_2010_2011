@@ -7,6 +7,46 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /> 
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" /> 
+    <style>
+	    /* Z-index of #mask must lower than #boxes .window */
+	    #mask {
+		    position:absolute;
+		    z-index:9000;
+		    background-color:black;
+		    display:none;
+	    }
+	    #boxes .window {
+		    position:fixed;
+		    width:440px;
+		    height:200px;
+		    display:none;
+		    z-index:9999;
+		    padding:20px;
+	    }
+	    /* Customize your modal window here, you can add background image too */
+	    #boxes #dialog {
+		    border-radius: 5px;
+		    background-color:rgba(255,255,255,1);
+		    width:600px; 
+		    height:400px;
+		    overflow:auto;
+	    }
+	    #dialog h1{
+		    background-color:rgba(200,200,200,0.9);
+	    }
+	    .button-modal, #dialog h1{
+		    background-color:rgba(33,33,33,0.7);
+	    	    padding:5px;	    
+		    border-radius: 2px;
+		    -moz-border-radius:2px;
+		    -webkit-border-radius:2px;
+  		    box-shadow:rgba(80,80,80,0.8) 0px 1px 3px;
+  		    -moz-box-shadow:rgba(80,80,80,0.8) 0px 1px 3px;
+                    -webkit-box-shadow:rgba(80,80,80,0.8) 0px 1px 3px;
+		    font-weight: bold;
+		    color:rgba(255,255,255,0.7);
+	    }
+    </style>
 </head>
 <body class="right">
     <div id="header"><div class="limiter">
@@ -23,10 +63,10 @@
 			<a data-control="layer" href="#y2011">2011</a>.
 		</span>
 	</p>
-	<!--
-	<div id="data-background">
-	<a href='#notes' class='notes' title='Download open data'>Notes on our data</a>
-</div>-->
+
+	<!-- #dialog is the id of a DIV defined in the code below -->
+	<a class="button-modal" href="#dialog" name="modal">NOTES ON OUR DATA</a>
+
 	<h3>ASYLUM SEEKERS</h3>
 	<div class="section-sep"></div>
 	<div class="legend-unhcr">
@@ -62,15 +102,6 @@
 	<span class="title-sources">Sources: </span><span class="sources">UNHCR.</span>
     </div></div>
     <div id="map" class="map">
-<!--	<div class="switch-overlay">
-		<div id="nav" class="layers">
-			<a data-control="layer" href="#y2010">2010</a>
-			<a data-control="layer" href="#y2011">2011</a>
-		</div>
-	</div>
-	<div class="subtitle-overlay">
-		Switch between 2010 and 2011 to see the differences
-	</div>-->
 	<div class="switch-overlay">
 		<div id="nav" class="layers">
 			<a data-control="layer" href="#y2010">2010</a>
@@ -81,22 +112,49 @@
         <img class="logo-unhcr" src="img/unhcr_logo_high_quality_res_bw.png">
 </div>
     <!--modal--> 
-    <div id="overlay"></div>
-    <div id="modal">
-	    <div class="popup">
-		    <div class="header clearfix">
-			    <h2>Notes on our Data</h2>
-			    <a href="#close" class="icon close">Close</a>
-		    </div>
-		    <div class="content">
-			    <p>This is an overlay</p>
-		    </div>
+    <div id="boxes">
+	    <!-- #customize your modal window here -->
+	    <div id="dialog" class="window">
+		    <h1>NOTES ON OUR DATA</h1>
+		    <h2>Prima facie Asylum Seekers</h2>
+		    <p>The terms asylum-seeker and refugee are often confused: an asylum-seeker is someone who says he or she is a refugee, but whose claim has not yet been definitively evaluated.</p>
+		    <p>
+		    National asylum systems are there to decide which asylum-seekers actually qualify for international protection. Those judged through proper procedures not to be refugees, nor to be in need of any other form of international protection, can be sent back to their home countries.
+		    </p>
+		    <p>
+		    The efficiency of the asylum system is key. If the asylum system is both fast and fair, then people who know they are not refugees have little incentive to make a claim in the first place, thereby benefitting both the host country and the refugees for whom the system is intended.
+		    </p>
+		    <p>
+		    During mass movements of refugees (usually as a result of conflicts or generalized violence as opposed to individual persecution), there is not - and never will be - a capacity to conduct individual asylum interviews for everyone who has crossed the border. Nor is it usually necessary, since in such circumstances it is generally evident why they have fled. As a result, such groups are often declared "prima facie" refugees.</p>
+		    </p>
+		    <h2>Emergency Response Team</h2>
+		    <p>
+		    UNHCR is often faced with a sudden emergency requiring an immediate response - an eruption of fighting causing tens of thousands of people to flee their homes, perhaps, or a massive earthquake displacing hundreds of thousands. That means the agency must be able to rush aid and experts to the affected zone without delay. Providing fleeing civilians with emergency help is often the first step towards their long-term protection and rehabilitation.
+		    </p>
+		    <p>
+		    To prepare for and respond to an emergency, UNHCR has assembled teams of people with a wide range of key skills who are ready for deployment anywhere in the world at a moment's notice. The agency has also created emergency stockpiles of non-food aid items in Copenhagen and Dubai to supplement local aid supplies in areas of need. We have established long-standing agreements with freight forwarders and logistics companies, and developed a global network of suppliers, specialist agencies and partners.
+		    </p>
+		    <p>
+		    This means that at any given time, UNHCR has the capacity to respond to a new emergency impacting up to 500,000 people. The agency can also mobilize more than 300 trained personnel within 72 hours. These experts come from its Emergency Response Team (ERT) roster. UNHCR has also developed mechanisms for the immediate mobilization of financial resources to help meet the response to an emergency without delay.
+		    </p>
+		    <p>
+		    To maintain this capacity and preparedness, UNHCR has developed training programmes that are held at regular intervals. They include the Workshop on Emergency Management, or WEM, which prepares all volunteers on UNHCR's ERT rosters. This weeklong exercise is held four times a year for up to 40 people and every effort is made to create the atmosphere of an actual emergency deployment. The main subjects include team-building, operations planning, financial and administrative systems, operational partnerships, communication and negotiation skills, security, coordination and information-sharing, telecommunications, and humanitarian protection.
+		    </p>
+		    <p>
+		    UNHCR's eCentre in Tokyo, meanwhile, is helping improve emergency preparedness and response capabilities in the Asia-Pacific region through targeted training and other capacity-building measures. UNHCR also contributes to inter-agency initiatives to enhance early warning and preparedness.
+		    </p>
+		    <!-- close button is defined as close class -->
+		    <a href="#" class="close">Close it</a>
 	    </div>
+	    <!-- Do not remove div#mask, because you'll need it to fill the whole screen --> 
+	    <div id="mask"></div>
     </div>
+
     <!-- External libraries and site script -->
     <script src="ext/jquery.min.js"></script>
     <script src="ext/modestmaps.min.js"></script>
     <script src="ext/wax/wax.mm.js"></script>
+    <script src="ext/bootstrap/js/bootstrap.min.js"></script>
     <script src="ext/wax/wax.ext.js"></script>
     <script src="ext/easey.js"></script>
     <script src="ext/mmg.js"></script>
@@ -104,6 +162,55 @@
     
     <!-- Site configuration -->
     <script type="text/javascript">
+    
+
+$(document).ready(function() {  
+ 
+    //select all the a tag with name equal to modal
+    $('a[name=modal]').click(function(e) {
+        //Cancel the link behavior
+        e.preventDefault();
+        //Get the A tag
+        var id = $(this).attr('href');
+     
+        //Get the screen height and width
+        var maskHeight = $(document).height();
+        var maskWidth = $(window).width();
+     
+        //Set height and width to mask to fill up the whole screen
+        $('#mask').css({'width':maskWidth,'height':maskHeight});
+         
+        //transition effect     
+        $('#mask').fadeIn(1000);    
+        $('#mask').fadeTo("slow",0.8);  
+     
+        //Get the window height and width
+        var winH = $(window).height();
+        var winW = $(window).width();
+               
+        //Set the popup window to center
+        $(id).css('top',  winH/2-$(id).height()/2);
+        $(id).css('left', winW/2-$(id).width()/2);
+     
+        //transition effect
+        $(id).fadeIn(2000); 
+     
+    });
+     
+    //if close button is clicked
+    $('.window .close').click(function (e) {
+        //Cancel the link behavior
+        e.preventDefault();
+        $('#mask, .window').hide();
+    });     
+     
+    //if mask is clicked
+    $('#mask').click(function () {
+        $(this).hide();
+        $('.window').hide();
+    });         
+     
+});
 
         // Make a new map in #map
     var main = Map('map',{
