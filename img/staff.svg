@@ -14,7 +14,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="staff.svg">
+   sodipodi:docname="staff.svg"
+   inkscape:export-filename="/home/ubuntu/git_project/unhcr_exp_2010_2011/img/staff.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.1495383"
-     inkscape:cx="55.484886"
-     inkscape:cy="691.8181"
+     inkscape:zoom="3.4689655"
+     inkscape:cx="90.321194"
+     inkscape:cy="705.00844"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -43,7 +46,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -53,16 +56,105 @@
      id="layer1">
     <path
        sodipodi:type="arc"
-       style="color:#000000;fill:#b20000;fill-opacity:0.8538813;fill-rule:nonzero;stroke:#150000;stroke-width:1.99940950000000006;stroke-miterlimit:4;stroke-opacity:0.92694062000000021;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:1"
+       style="color:#000000;fill:#b20000;fill-opacity:0.88127851000000001;fill-rule:nonzero;stroke:#cab8b8;stroke-width:1.66396323;stroke-miterlimit:4;stroke-opacity:0.92694062000000021;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="path3004"
        sodipodi:cx="202.85715"
        sodipodi:cy="302.36218"
        sodipodi:rx="77.14286"
        sodipodi:ry="55.714287"
        d="m 280.00001,302.36218 a 77.14286,55.714287 0 1 1 -154.28572,0 77.14286,55.714287 0 1 1 154.28572,0 z"
-       transform="matrix(0.12704094,0,0,0.17721289,108.27812,296.15197)"
+       transform="matrix(0.51073038,0,0,0.70716516,-26.817024,116.46924)"
        inkscape:export-filename="/home/ubuntu/git_project/unhcr_exp_2010_2011/img/staff.png"
-       inkscape:export-xdpi="134.7196"
-       inkscape:export-ydpi="134.7196" />
+       inkscape:export-xdpi="140"
+       inkscape:export-ydpi="140" />
+    <rect
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3001-6"
+       width="64.300011"
+       height="1"
+       x="75.224121"
+       y="290.11215"
+       inkscape:export-filename="/home/ubuntu/git_project/unhcr_exp_2010_2011/img/staff.png"
+       inkscape:export-xdpi="140"
+       inkscape:export-ydpi="140" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:none;fill-opacity:0.85388129999999984;fill-rule:nonzero;stroke:#0c0c0c;stroke-width:0.99837794;stroke-miterlimit:4;stroke-opacity:0.92694062000000021;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path3004-4-0"
+       sodipodi:cx="202.85715"
+       sodipodi:cy="302.36218"
+       sodipodi:rx="77.14286"
+       sodipodi:ry="55.714287"
+       d="m 280.00001,302.36218 a 77.14286,55.714287 0 1 1 -154.28572,0 77.14286,55.714287 0 1 1 154.28572,0 z"
+       transform="matrix(0.25536519,0,0,0.35358258,25.076073,243.02672)"
+       inkscape:export-filename="/home/ubuntu/git_project/unhcr_exp_2010_2011/img/staff.png"
+       inkscape:export-xdpi="140"
+       inkscape:export-ydpi="140" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:none;fill-opacity:0.85388129999999984;fill-rule:nonzero;stroke:#150000;stroke-width:1.99675584;stroke-miterlimit:4;stroke-opacity:0.92694062000000021;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path3004-4"
+       sodipodi:cx="202.85715"
+       sodipodi:cy="302.36218"
+       sodipodi:rx="77.14286"
+       sodipodi:ry="55.714287"
+       d="m 280.00001,302.36218 a 77.14286,55.714287 0 1 1 -154.28572,0 77.14286,55.714287 0 1 1 154.28572,0 z"
+       transform="matrix(0.1276826,0,0,0.17679129,50.791023,306.23486)"
+       inkscape:export-filename="/home/ubuntu/git_project/unhcr_exp_2010_2011/img/staff.png"
+       inkscape:export-xdpi="140"
+       inkscape:export-ydpi="140" />
+    <rect
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3001-6-1"
+       width="64.300011"
+       height="1"
+       x="75.224121"
+       y="329.24734"
+       inkscape:export-filename="/home/ubuntu/git_project/unhcr_exp_2010_2011/img/staff.png"
+       inkscape:export-xdpi="140"
+       inkscape:export-ydpi="140" />
+    <rect
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.30000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3001-6-13"
+       width="64.300011"
+       height="1"
+       x="75.224121"
+       y="348.97696"
+       inkscape:export-filename="/home/ubuntu/git_project/unhcr_exp_2010_2011/img/staff.png"
+       inkscape:export-xdpi="140"
+       inkscape:export-ydpi="140" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="142.32594"
+       y="333.97452"
+       id="text3876"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3878"
+         x="142.32594"
+         y="333.97452">35</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="141.92165"
+       y="292.81387"
+       id="text3876-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3878-7"
+         x="141.92165"
+         y="292.81387">145</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="141.92165"
+       y="353.35062"
+       id="text3876-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3878-9"
+         x="141.92165"
+         y="353.35062">10</tspan></text>
   </g>
 </svg>
