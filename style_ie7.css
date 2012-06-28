@@ -93,7 +93,8 @@ body > div {
   right:0;
   bottom:0;
   left:0;
-  z-index:0;
+  /*z-index:0;*/
+  z-index:-1;
 }
 .logo-unhcr {
   position:absolute;
@@ -229,29 +230,21 @@ ul.legend-labels li span {
 
 .switch-overlay {
   position:absolute;
-  background:rgba(33,33,33,0.4);
-  border-radius:3px;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
-  /*background:rgba(255,255,255,0.2);*/
+  background: url(img/background_grey_40percent.png) repeat center top;
   padding:3px;
   top:58px;
   left:90px;
-  z-index:1;
 }
-
 
 
 .subtitle-overlay {
-  z-index:1;
-  color:rgba(22,22,22,0.7);
-  color:rgba(255,255,255,0.9);
-  padding:8px;
+  color:rgb(230,230,230);
   float:left;
   font-weight:900;
+  padding:8px;
   font-style:italic;
   font-size:110%;
-}
+  }
 
 
 .switch-overlay .layers a {
@@ -260,34 +253,32 @@ ul.legend-labels li span {
   padding:8px;
   margin:0px 2px;
   background:#eee;
-  background:rgba(238,238,238,0.8);
-  max-width:60px;
+  max-width:30px;
   font-weight: bold;
-  color:rgba(0,0,0,0.8);
-  /*max-width:300px;*/
+  color:rgb(33,33,33);
 }
 .switch-overlay .layers a:hover, .layers a:focus, .layers a.active {
   background:#369;
-  background:rgba(33,66,99,0.8);
   color:white;
 }
-.rationale .layers a {
+
+
+rationale .layers a {
   display:inline;
   padding:1px;
   margin:0px 2px;
-  /*background:#eee;*/
   background:#eee;
   background:rgba(200,200,200,0.7);
   max-width:60px;
   font-size:100%;
   font-weight: normal;
-  color:rgba(0,0,0,0.8);
+  color:rgb(33,33,33);
   border-radius:2px;
   -moz-border-radius:2px;
   -webkit-border-radius:2px;
 }
 
-.rationale .layers a:hover,p .layers a:focus,p .layers a.active {
+rationale .layers a:hover,p .layers a:focus,p .layers a.active {
   background:#369;
   background:rgba(33,66,99,0.8);
   color:white;
@@ -564,7 +555,8 @@ a.zoomer {
 	right: 0px;
 	top: 0px;
 	bottom: 0px;
-	z-index: -1;
+	z-index: 3;
+	/*z-index: -1;*/
 	opacity: 0;
 	filter:alpha(opacity=0);
 	transition:opacity .25s;
@@ -600,17 +592,18 @@ html #overlay {
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	height: 50px;
+	height: 0px;
 	background: #282828;
 	color: #989898;}
 #modal .header h2 {
 	font-family: 'AlternateGothicLTNo3Regular',Arial, sans-serif;
 	font-weight: 100;
 	text-transform: uppercase;
-       	margin-left: 20px;
+    margin-left: 20px;
 	line-height: 50px;
 	color:#F00;
 }
+/*
 #modal .header .close {
 	background-color: black;
 	margin: 0px;
@@ -620,6 +613,13 @@ html #overlay {
 	background-position: 20px -215px;
 	width: 60px;
 	height: 50px;}
+*/
+.close{
+	position:absolute;
+	top: 5px;
+	left: 5px;
+}
+	
 #modal .content {
 	position: absolute;
 	top: 50px;
@@ -670,8 +670,6 @@ a.icon {
 	width: 25px;
 	height: 25px;
 }
-
-/*
 /*-----------------------------------
  * Markup free clearing
  * Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack
@@ -684,7 +682,6 @@ a.icon {
 	visibility: hidden;
 }
 * html .clearfix { height: 1%; } /* IE6 */
-
 *:first-child + html .clearfix { min-height: 1%; } /* IE7 */
 
 /* Animation */
@@ -708,6 +705,7 @@ a.icon {
 @-moz-keyframes fade-in { from { opacity:0; } to { opacity:1; } }
 @-ms-keyframes fade-in { from { opacity:0; } to { opacity:1; } }
 @-o-keyframes fade-in { from { opacity:0; } to { opacity:1; } }
+
 /* Z-index of #mask must lower than #boxes .window */
 #mask {
 	position:absolute;
@@ -726,16 +724,26 @@ a.icon {
 /* Customize your modal window here, you can add background image too */
 #boxes #dialog {
 	border-radius: 5px;
-	background-color:rgba(255,255,255,1);
+	background-color:rgb(255,255,255);
 	width:600px; 
 	height:400px;
 	overflow:auto;
 }
-#dialog h1{
-	background-color:rgba(200,200,200,0.9);
+#dialog  h1{
+   background: url(img/background_grey_70percent.png) repeat center top;
+	padding:1px;
+	margin:30px 0px 0px 0px;
+	border-radius: 2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	box-shadow:rgba(80,80,80,0.8) 0px 1px 3px;
+	-moz-box-shadow:rgba(80,80,80,0.8) 0px 1px 3px;
+	-webkit-box-shadow:rgba(80,80,80,0.8) 0px 1px 3px;
+	font-weight: bold;
+	color:rgb(220,220,220);
 }
-.button-modal, #dialog h1{
-	background:rgba(33,33,33,0.7);
+.button-modal{
+   background: url(img/background_grey_70percent.png) repeat center top;
 	padding:5px;	    
 	border-radius: 2px;
 	-moz-border-radius:2px;
@@ -744,5 +752,5 @@ a.icon {
 	-moz-box-shadow:rgba(80,80,80,0.8) 0px 1px 3px;
 	-webkit-box-shadow:rgba(80,80,80,0.8) 0px 1px 3px;
 	font-weight: bold;
-	color:rgba(255,255,255,0.7);
+	color:rgb(220,220,220);
 }

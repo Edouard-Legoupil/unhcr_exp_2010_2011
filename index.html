@@ -5,48 +5,11 @@
     <title>UNHCR expenses 2010-2011</title>
     <link rel="stylesheet" href="map.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" type="text/css" href="style_ie7.css" />
+    <![endif]-->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /> 
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" /> 
-    <style>
-	    /* Z-index of #mask must lower than #boxes .window */
-	    #mask {
-		    position:absolute;
-		    z-index:9000;
-		    background-color:black;
-		    display:none;
-	    }
-	    #boxes .window {
-		    position:fixed;
-		    width:440px;
-		    height:200px;
-		    display:none;
-		    z-index:9999;
-		    padding:20px;
-	    }
-	    /* Customize your modal window here, you can add background image too */
-	    #boxes #dialog {
-		    border-radius: 5px;
-		    background-color:rgba(255,255,255,1);
-		    width:600px; 
-		    height:400px;
-		    overflow:auto;
-	    }
-	    #dialog h1{
-		    background-color:rgba(200,200,200,0.9);
-	    }
-	    .button-modal, #dialog h1{
-		    background-color:rgba(33,33,33,0.7);
-	    	    padding:5px;	    
-		    border-radius: 2px;
-		    -moz-border-radius:2px;
-		    -webkit-border-radius:2px;
-  		    box-shadow:rgba(80,80,80,0.8) 0px 1px 3px;
-  		    -moz-box-shadow:rgba(80,80,80,0.8) 0px 1px 3px;
-                    -webkit-box-shadow:rgba(80,80,80,0.8) 0px 1px 3px;
-		    font-weight: bold;
-		    color:rgba(255,255,255,0.7);
-	    }
-    </style>
 </head>
 <body class="right">
     <div id="header"><div class="limiter">
@@ -106,7 +69,7 @@
 		<div id="nav" class="layers">
 			<a data-control="layer" href="#y2010">2010</a>
 			<a data-control="layer" href="#y2011">2011</a>
-		<span class="subtitle-overlay">Switch between 2010 and 2011 to see the differences and hover on symbols to get contextual information.</span>
+		<div class="subtitle-overlay">Switch between 2010 and 2011 to see the differences and hover on symbols to get contextual information.</div>
 		</div>
 	</div>
         <img class="logo-unhcr" src="img/unhcr_logo_high_quality_res_bw.png">
@@ -162,7 +125,8 @@
     
     <!-- Site configuration -->
     <script type="text/javascript">
-    
+
+	
 
 $(document).ready(function() {  
  
@@ -214,7 +178,7 @@ $(document).ready(function() {
 
         // Make a new map in #map
     var main = Map('map',{
-            api:'http://a.tiles.mapbox.com/v3/unhcr.unhcr_2010_2011_background.jsonp',
+            api:'http://a.tiles.mapbox.com/v3/unhcr.map-rzqg2g01.jsonp',
             center: {
                 lat: 23,
                 lon: 45,
@@ -233,7 +197,7 @@ $(document).ready(function() {
 
         main.layers({
             y2010: {
-            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-khq8nu2u.jsonp',
+            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-rzqg2g01.jsonp',
                 center: {
 		 lat: 0,
                  lon: 0,
@@ -244,7 +208,7 @@ $(document).ready(function() {
                 initial: true
             },
             y2011: {
-            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-3y1hfdu9.jsonp',
+            	api:'http://a.tiles.mapbox.com/v3/unhcr.map-hj83vh1a.jsonp',
                 center: {
 		 lat: 0,
                  lon: 0,
