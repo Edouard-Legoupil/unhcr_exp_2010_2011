@@ -614,7 +614,7 @@ html #overlay {
 	width: 60px;
 	height: 50px;}
 */
-.close{
+#dialog .close{
 	position:absolute;
 	top: 5px;
 	left: 5px;
