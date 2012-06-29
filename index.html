@@ -126,12 +126,20 @@
     <!-- Site configuration -->
     <script type="text/javascript">
 
+
+	// Detect IE7 or IE8
+    	var ua = $.browser;
+	if ( ua.msie && ua.version.slice(0,1) == "8" ) {
+		alert('You are using Internet Explorer 8. You are advised to use Internet Explorer 9 for optimal use of this web site.');
+	} else if ( ua.msie && ua.version.slice(0,1) == "7" ) {
+		alert('You are using Internet Explorer 7. You are advised to use Internet Explorer 9 for optimal use of this web site.');
+	} 
 	
 
-$(document).ready(function() {  
+	$(document).ready(function() {  
  
-    //select all the a tag with name equal to modal
-    $('a[name=modal]').click(function(e) {
+    	//select all the a tag with name equal to modal
+    	$('a[name=modal]').click(function(e) {
         //Cancel the link behavior
         e.preventDefault();
         //Get the A tag
