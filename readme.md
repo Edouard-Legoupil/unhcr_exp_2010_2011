@@ -1,3 +1,6 @@
+
+The site is browsable at http://edouard-legoupil.github.com/unhcr_exp_2010_2011
+
 ## About Map Site Templates
 
 [Map Site templates](http://mapbox.com/map-sites) from MapBox are a way to jumpstart building a map-based web feature. The map-site templates bundles common html and css formatting with reusable javascript components.
